@@ -25,13 +25,13 @@ const Cards1 = () => {
                 {
                     data.map((item, index) => (
                         <div key={index} className="max-w-sm p-6 bg-white border border-gray-200 shadow text-center">
-                            <i className={`bx ${item.icon} text-orange-400 text-3xl m-6`}></i>
+                            <i className={`bx ${item.icon} text-orange-400 text-5xl hover:scale-125 duration-150 m-6`}></i>
                             <a href="#">
-                                <h5 className="mb-2 text-2xl mx-2 font-semibold tracking-tight text-gray-900 hover:text-orange-400">
+                                <h5 className="mb-2 text-xl mx-2 font-semibold tracking-tight text-gray-900 hover:text-orange-400">
                                     {item.heading}
                                 </h5>
                             </a>
-                            <p className="mb-3 font-normal text-sm text-gray-500">
+                            <p className="mb-3 font-extralight text-sm text-gray-500">
                                 {item.details}
                             </p>
                         </div>

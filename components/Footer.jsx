@@ -10,7 +10,7 @@ const Footer = () => {
                     <div class="mb-6 md:mb-0">
                         <a href="https://flowbite.com/" class="flex items-center">
                             <img src="/f51cc66a9f724c721340e39c1c981a32-Photoroom.png" class="h-20 me-3" alt="SEOTech Logo" />
-                            <span class="self-center text-2xl font-semibold text-white whitespace-nowrap">SEOTech</span>
+                            <span class="self-center text-3xl font-semibold text-white whitespace-nowrap">SEOTech</span>
                         </a>
                     </div>
                     <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -18,10 +18,10 @@ const Footer = () => {
                             <h2 class="mb-6 text-sm font-semibold text-white uppercase">Resources</h2>
                             <ul class="text-gray-400 font-medium">
                                 <li class="mb-4">
-                                    <a href="https://flowbite.com/" class="hover:underline">First</a>
+                                    <a href="https://flowbite.com/" class="hover:underline font-extralight">First</a>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" class="hover:underline">Second</a>
+                                    <a href="https://tailwindcss.com/" class="hover:underline font-extralight">Second</a>
                                 </li>
                             </ul>
                         </div>
@@ -29,10 +29,10 @@ const Footer = () => {
                             <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow us</h2>
                             <ul class="text-gray-400 font-medium">
                                 <li class="mb-4">
-                                    <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Third</a>
+                                    <a href="https://github.com/themesberg/flowbite" class="hover:underline  font-extralight">Third</a>
                                 </li>
                                 <li>
-                                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Fourth</a>
+                                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline font-extralight">Fourth</a>
                                 </li>
                             </ul>
                         </div>
@@ -40,10 +40,10 @@ const Footer = () => {
                             <h2 class="mb-6 text-sm font-semibold text-white uppercase">Legal</h2>
                             <ul class="text-gray-400 font-medium">
                                 <li class="mb-4">
-                                    <a href="#" class="hover:underline">Privacy Policy</a>
+                                    <a href="#" class="hover:underline font-extralight">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                    <a href="#" class="hover:underline font-extralight">Terms &amp; Conditions</a>
                                 </li>
                             </ul>
                         </div>
@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
                 <hr class="my-6 border-gray-400 sm:mx-auto lg:my-8" />
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <span class="text-sm text-gray-400 sm:text-center">© 2024 <a href="https://flowbite.com/" class="hover:underline">SEOTech</a>. All Rights Reserved.
+                    <span class="text-sm font-extralight text-gray-400 sm:text-center">© 2024 <a href="https://flowbite.com/" class="hover:underline">SEOTech</a>. All Rights Reserved.
                     </span>
                     <div class="flex mt-4 sm:justify-center sm:mt-0">
                         <a href="#" class="text-gray-400 hover:text-gray-900">
