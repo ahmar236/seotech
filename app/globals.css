@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 @import url("boxicons/css/boxicons.min.css");
+
+.animation {
+    flex: 5;
+    transition: ease-in-out .75s;
+}
