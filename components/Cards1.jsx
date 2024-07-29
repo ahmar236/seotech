@@ -21,7 +21,7 @@ const data = [
 const Cards1 = () => {
     return (
         <div className='m-10'>
-            < div className=" grid grid-cols-1 md:grid-cols-3 md:gap-8" >
+            < div className=" grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8" >
                 {
                     data.map((item, index) => (
                         <div key={index} className="max-w-sm p-6 bg-white border border-gray-200 shadow text-center">

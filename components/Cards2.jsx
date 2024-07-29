@@ -28,10 +28,10 @@ const Cards2 = () => {
     return (
         <div className='m-0 bg-sky-700 p-10'>
             <div className='text-center text-white mb-10'>
-                <h3 className='text-2xl font-medium'>Our Top Notch Services</h3>
-                <h5 className='text-lg font-extralight'>Top-tier services to meet all your digital needs</h5>
+                <h3 className='text-lg md:text-2xl font-medium'>Our Top Notch Services</h3>
+                <h5 className='text-base md:text-lg font-extralight'>Top-tier services to meet all your digital needs</h5>
             </div>
-            < div className=" grid grid-cols-1 md:grid-cols-4 md:gap-10" >
+            < div className=" grid grid-cols-1 place-items-center md:grid-cols-4 gap-4 md:gap-10" >
                 {
                     data.map((item, index) => (
                         <div key={index} className="max-w-sm p-6 bg-amber-100 border border-sky-800 shadow text-black text-center">
