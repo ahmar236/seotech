@@ -10,10 +10,13 @@ const Header = () => {
 
     return (
         <nav className="bg-slate-200 border-gray-200">
-            <div className="max-w-screen-xl h-24 flex flex-wrap items-start justify-between mx-auto p-4">
+            <div className="max-w-screen-xl h-24 flex flex-wrap items-start justify-between mx-auto md:mt-4 p-4">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="/f51cc66a9f724c721340e39c1c981a32-Photoroom.png" className="h-24" alt="Flowbite Logo" />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap">SEOTech</span>
+                    <img src="/digi-logo.png" className="h-20" alt="Flowbite Logo" />
+                    <div className='flex flex-col'>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap">S-Digi Marketing</span>
+                        <span className="self-center text-xs font-extralight tracking-[.25em]">MARKETING EXPERTS</span>
+                    </div>
                 </a>
 
                 <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
@@ -50,10 +53,10 @@ const Header = () => {
                             </div>
                         </li>
                         <li>
-                            <a href="#" className="block font-extralight py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
+                            <a href="#services" className="block font-extralight py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
                         </li>
                         <li>
-                            <a href="#" className="block font-extralight py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pricing</a>
+                            <a href="#plans" className="block font-extralight py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pricing</a>
                         </li>
                         <li>
                             <a href="#" className="block font-extralight py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>

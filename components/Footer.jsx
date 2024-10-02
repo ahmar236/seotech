@@ -9,8 +9,8 @@ const Footer = () => {
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="https://flowbite.com/" class="flex items-center">
-                            <img src="/f51cc66a9f724c721340e39c1c981a32-Photoroom.png" class="h-20 me-3" alt="SEOTech Logo" />
-                            <span class="self-center text-3xl font-semibold text-white whitespace-nowrap">SEOTech</span>
+                            <img src="/digi-logo1.png" class="w-2/5 me-3" alt="SEOTech Logo" />
+
                         </a>
                     </div>
                     <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -51,7 +51,9 @@ const Footer = () => {
                 </div>
                 <hr class="my-6 border-gray-400 sm:mx-auto lg:my-8" />
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <span class="text-xs font-extralight text-gray-400 sm:text-center">© 2024 <a href="https://flowbite.com/" class="hover:underline">SEOTech</a>. All Rights Reserved.
+                    <span class="text-xs font-extralight text-gray-400 sm:text-center">Developed by - <a href="https://www.upwork.com/freelancers/~013ba164577475f43f?mp_source=share" class="hover:underline">Omni Business Solutions</a>
+                    </span>
+                    <span class="text-xs font-extralight text-gray-400 sm:text-center">© 2024 <a href="#" class="hover:underline">SEOTech</a>. All Rights Reserved.
                     </span>
                     <div class="flex mt-4 sm:justify-center sm:mt-0">
                         <a href="#" class="text-gray-400 hover:text-gray-900">
