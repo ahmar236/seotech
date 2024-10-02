@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image'; // Importing the Image component
 
 const Header = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -12,7 +13,7 @@ const Header = () => {
         <nav className="bg-slate-200 border-gray-200">
             <div className="max-w-screen-xl h-24 flex flex-wrap items-start justify-between mx-auto md:mt-4 p-4">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="/digi-logo.png" className="h-20" alt="Flowbite Logo" />
+                    <Image src="/digi-logo.png" alt="Flowbite Logo" width={80} height={80} className="h-20" /> {/* Replaced img with Image */}
                     <div className='flex flex-col'>
                         <span className="self-center text-2xl font-semibold whitespace-nowrap">S-Digi Marketing</span>
                         <span className="self-center text-xs font-extralight tracking-[.25em]">MARKETING EXPERTS</span>

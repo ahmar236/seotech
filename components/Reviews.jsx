@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const Reviews = () => {
     return (
@@ -11,19 +12,54 @@ const Reviews = () => {
                 <h1 className="text-lg md:text-2xl font-semibold mb-8">Trusted & supported by</h1>
                 <div className='flex mx-4 md:mx-10 justify-center gap-5 md:gap-20'>
                     <div className='bg-white w-16 md:w-32 h-16 md:h-32 shadow-lg border border-slate-400 flex justify-center align-middle'>
-                        <img src="./Logo1.png" className='w-10 md:w-20 h-auto object-contain hover:scale-110 duration-200' />
+                        <Image
+                            src="/Logo1.png"
+                            alt="Logo 1"
+                            width={80}
+                            height={80}
+                            objectFit="contain"
+                            className='hover:scale-110 duration-200'
+                        />
                     </div>
                     <div className='bg-white w-16 md:w-32 h-16 md:h-32 shadow-lg border border-slate-400 flex justify-center align-middle'>
-                        <img src="./Logo2.png" className='w-10 md:w-20 h-auto object-contain hover:scale-110 duration-200' />
+                        <Image
+                            src="/Logo2.png"
+                            alt="Logo 2"
+                            width={80}
+                            height={80}
+                            objectFit="contain"
+                            className='hover:scale-110 duration-200'
+                        />
                     </div>
                     <div className='bg-white w-16 md:w-32 h-16 md:h-32 shadow-lg border border-slate-400 flex justify-center align-middle'>
-                        <img src="./Logo3.png" className='w-10 md:w-20 h-auto object-contain hover:scale-110 duration-200' />
+                        <Image
+                            src="/Logo3.png"
+                            alt="Logo 3"
+                            width={80}
+                            height={80}
+                            objectFit="contain"
+                            className='hover:scale-110 duration-200'
+                        />
                     </div>
                     <div className='bg-white w-16 md:w-32 h-16 md:h-32 shadow-lg border border-slate-400 flex justify-center align-middle'>
-                        <img src="./Logo4.png" className='w-10 md:w-20 h-auto object-contain hover:scale-110 duration-200' />
+                        <Image
+                            src="/Logo4.png"
+                            alt="Logo 4"
+                            width={80}
+                            height={80}
+                            objectFit="contain"
+                            className='hover:scale-110 duration-200'
+                        />
                     </div>
                     <div className='bg-white w-16 md:w-32 h-16 md:h-32 shadow-lg border border-slate-400 flex justify-center align-middle'>
-                        <img src="./Logo5.png" className='w-10 md:w-20 h-auto object-contain hover:scale-110 duration-200' />
+                        <Image
+                            src="/Logo5.png"
+                            alt="Logo 5"
+                            width={80}
+                            height={80}
+                            objectFit="contain"
+                            className='hover:scale-110 duration-200'
+                        />
                     </div>
                 </div>
             </div>
@@ -32,4 +68,4 @@ const Reviews = () => {
     );
 }
 
-export default Reviews
+export default Reviews;

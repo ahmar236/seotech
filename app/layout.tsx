@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body className="bg-slate-200">
-        <Header className='z-50' />
+        <Header />
         {children}
         <Footer />
         </body>

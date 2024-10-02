@@ -1,6 +1,7 @@
 'use client'; // Add this if you're using Next.js 13+ with the new app directory structure
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 
 const Carousel = () => {
     const images = [
@@ -18,9 +19,9 @@ const Carousel = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
     };
 
-    const nextSlide = () => {
+    const nextSlide = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
+    }, [images.length]);
 
     const goToSlide = (index) => {
         setCurrentIndex(index);
@@ -32,7 +33,7 @@ const Carousel = () => {
         }, 3000); // Change slide every 3 seconds
 
         return () => clearInterval(interval); // Clear interval on component unmount
-    }, [currentIndex]); // Depend on currentIndex to reset interval when the slide changes
+    }, [nextSlide]); // Now `nextSlide` is in the dependency array
 
     return (
         <div className='relative w-full mx-auto mt-8'>
@@ -43,7 +44,13 @@ const Carousel = () => {
                 >
                     {images.map((src, index) => (
                         <div key={index} className='w-full flex-shrink-0'>
-                            <img src={src} alt={`Slide ${index + 1}`} className='w-full h-[250px] md:h-[500px] object-cover' />
+                            <Image
+                                src={src}
+                                alt={`Slide ${index + 1}`}
+                                width={1920}
+                                height={1080}
+                                className='w-full h-[250px] md:h-[500px] object-cover'
+                            />
                         </div>
                     ))}
                 </div>
@@ -77,4 +84,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
